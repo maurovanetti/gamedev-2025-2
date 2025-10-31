@@ -3059,6 +3059,8 @@ GameObject:
   - component: {fileID: 3280508617114225436}
   - component: {fileID: -3114338698189926524}
   - component: {fileID: 1402475634598693857}
+  - component: {fileID: 455700234964533186}
+  - component: {fileID: -2290818599654163814}
   m_Layer: 0
   m_Name: Pug
   m_TagString: Untagged
@@ -3152,7 +3154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c084ddbb02c8240b518efcef510b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 2
 --- !u!114 &1402475634598693857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3165,6 +3167,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30204af55fa0e7745a591d17cbe21b7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCausingGameOver: 1
+--- !u!65 &455700234964533186
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3666006696028444414}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12126187, y: 0.19850092, z: 0.24917693}
+  m_Center: {x: 0, y: 0.09261985, z: 0.02860315}
+--- !u!114 &-2290818599654163814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3666006696028444414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 855a4de5b223c2b4a923e04e8a090c95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitsRequired: 1
 --- !u!1 &4000785264468043164
 GameObject:
   m_ObjectHideFlags: 0
